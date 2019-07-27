@@ -11,12 +11,24 @@
     <h1 id="title"></h1>
     <p id="description"></p>
     <form action="" id="survey-form">
-      <label for="name">Name: </label>
-      <input type="name" id="name" name="name">
-      <label for="email">Email: </label>
-      <input type="email" id="email" name="email" placeholder="Enter your email here" required>
-      <label for="number">Age</label>
-      <input type="number" id="number" name="age">
+      <label for="name" id="name-label">Name: </label>
+      <input type="name" id="name" name="name" placeholder="Enter your name here">
+      <label for="email" id="email-label">Email: </label>
+      <input type="email" id="email" name="email" placeholder="Enter your email here" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"" required>
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" name="age" min="2" max="2" placeholder="Your age here">
+      <select id="dropdown">
+        <option value="fulltime">Full-time</option>
+        <option value="parttime">Part-time</option>
+        <option value="weekend">Weekend</option>
+      </select>
+
+      <input type="radio" id="fulltime" name="radio-button"><label for="fulltime">Full-time</label>
+      <input type="radio" id="parttime" name="radio-button"><label for="parttime">Part-time</label>
+      <input type="radio" id="weekend" name="radio-button"><label for="weekend">Weekend</label>
+
+
 
     </form>
 
