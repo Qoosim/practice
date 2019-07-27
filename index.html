@@ -8,11 +8,11 @@
 
   <body>
     
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
     <form action="" id="survey-form">
       <label for="name" id="name-label">Name: </label>
-      <input type="name" id="name" name="name" placeholder="Enter your name here">
+      <input type="name" id="name" name="name" placeholder="Enter your name here" required>
       <label for="email" id="email-label">Email: </label>
       <input type="email" id="email" name="email" placeholder="Enter your email here" 
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"" required>
@@ -24,13 +24,17 @@
         <option value="weekend">Weekend</option>
       </select>
 
-      <input type="radio" id="fulltime" name="radio-button"><label for="fulltime">Full-time</label>
-      <input type="radio" id="parttime" name="radio-button"><label for="parttime">Part-time</label>
-      <input type="radio" id="weekend" name="radio-button"><label for="weekend">Weekend</label>
+      <input type="radio" id="fulltime" name="radio-button" value="Full-time"><label for="fulltime">Full-time</label>
+      <input type="radio" id="parttime" name="radio-button" value="Part-time"><label for="parttime">Part-time</label>
+      <input type="radio" id="weekend" name="radio-button" value="Weekend"><label for="weekend">Weekend</label>
 
       <input type="checkbox" id="font" value="Font-end"><label for="font">Font-end</label>
       <input type="checkbox" id="back" value="Back-end"><label for="back">Back-end</label>
       <input type="checkbox" id="graphic" value="Graphic"><label for="graphic">Graphic</label>
+
+      <label for="comment">Comment:</label>
+      <input type="textarea">
+      <button id="submit" value="Submit">Submit</button>
 
     </form>
 
