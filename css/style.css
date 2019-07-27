@@ -1,7 +1,17 @@
 html, body {
-    background: #d1d1d1;
+    background: #eee;
 }
 
-.header {
-    text-align: center;
+#div-img {
+    width: 100%;
+    height: 600px;
+
 }
+
+img {
+    max-width: 140px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
